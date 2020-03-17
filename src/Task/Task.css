@@ -1,0 +1,57 @@
+#addTask{
+    border-style: solid;
+    border: steelblue;
+}
+#btn1 {
+    padding: 5px;
+    width: 25%;
+    background:  blue;
+    color: black;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    margin-top: 10px;
+  }
+  .w3-panel{
+      margin: 10px 0px 0px 0px;
+      border-radius: 5px;
+      padding: 12px 8px 12px 10px;
+      background-color: #27a1d1;
+      text-align: justify;
+
+  }
+  
+  .col-6{
+      margin-left: 120px;
+  }
+  .form-control{
+      margin-bottom: 30px;
+  }
+  .container{
+      margin-top: 10px;
+      padding: 0px 120px 0px 120px;
+  }
+  .container p{
+      text-align: left;
+      position: relative;
+      background-color: #f1f5f7;
+      border-radius: 5px;
+      font-size: 18px;
+      padding: 12px 8px 12px 40px;
+      
+}
+p{
+    margin-bottom: 0px;
+}
+.w3-large{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.btn-primary{
+    background-color: #33a6d3;
+
+}
