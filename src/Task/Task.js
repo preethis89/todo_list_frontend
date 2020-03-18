@@ -6,11 +6,11 @@ function Task(props) {
     return (
         <div class="container">
                 <div class="row">
-                    <div class="col">
-            <p>{props.text} - {props.urgent === true ? "Urgent" : ""} 
+                    <div class="col-12 col-4">
+            <p>{props.text} - {props.urgent === true ? <css style={{color: 'red'}}>"Urgent"</css> : "Can wait"} 
             <span>
-                <button type="button">{props.status === "completed" ? <Completed /> : <Pending /> }</button>
-                <button type="button" class="btn btn-primary">Delete</button>
+                <div>{props.status === "completed" ? <Completed /> : <Pending /> }
+                <button type="button" class="btn btn-primary">Delete</button></div>
                 </span>
             </p> 
             
