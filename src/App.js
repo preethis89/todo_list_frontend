@@ -17,10 +17,10 @@ function App() {
         
       </main>
       <div> 
-        <Task text = "Take vitamins" urgent ={true} />
-        <Task text = "Do the dishes" urgent ={false}/>
-        <Task text = "Go for a walk" urgent ={true}/>
-        <Task text = "Complete the Exercise" urgent ={true}/>
+        <Task text = "Take vitamins" urgent ={true}  status ="completed"/>
+        <Task text = "Do the dishes" urgent ={false} status ="pending"/>
+        <Task text = "Go for a walk" urgent ={true} status ="completed"/>
+        <Task text = "Complete the Exercise" urgent ={true} status ="pending"/>
         
       </div>
      

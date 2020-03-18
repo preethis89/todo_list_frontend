@@ -10,10 +10,13 @@ function Header() {
                 </a>
             </nav>
             <div class="container">
+                <div class="row">
+                    <div class="col">
             <h1 id="mainTitle">
                 Do IT
             </h1>
-            
+            </div>
+            </div>
             </div>
         </div>
     );
