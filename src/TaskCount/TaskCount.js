@@ -1,13 +1,13 @@
 import React from 'react';
-import "./Task.css";
+import "/Users/srini/Tech Returners/todo_list_frontend/src/Task/Task.css";
 
-function TaskCount() {
+function TaskCount(props) {
     return (
         <div class="container">
                 <div class="row">
                     <div class="col">
         <div id="taskCount1" class="w3-panel">
-            <p class="w3-large">Outstanding task to be completed - 4</p>
+            <p class="w3-large">Outstanding task to be completed - {props.count}</p>
         </div>
         </div>
         </div>
