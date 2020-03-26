@@ -1,34 +1,35 @@
 import React from 'react';
 import Completed from "./Completed";
-import Pending from "./Pending";
-
+import moment from "moment";
 function Task(props) {
+    const deleteHandleClick = () => {
+        props.deleteTaskFn(props.id);
+    };
+    const completeHandleClick = () => {
+        props.completedTaskFn(props.id);
+    };
     return (
-        <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-            <div>{props.text} - {props.priority === "urgent" ? <css style={{color: 'red'}}>"Urgent"</css> : "Can wait" } 
-            </div>
-            </div>
-            <div class="col-4 col-md-2">
-            <div id="duedate">
-            {props.dueDate}
-            </div>
-            </div>
-            
-            <div class="col-8 col-md-4">
-            <span class="statusbtn">
-           
-                <div>{props.status === "completed" ? <Completed /> : <Pending /> }
-                <button type="button" class="btn btn-primary">Delete</button></div>
-                </span>
+        <div className="container">
+            <div className="row">
+                <div className="col-12 col-md-4">
+                    <div>{props.text}
+                    </div>
                 </div>
-            
-            
-        
-        </div>
+                <div className="col-12 col-md-3">{props.priority === "urgent" ? <css style={{ color: 'red' }}>"Urgent"</css> : "Can wait"}
+                </div>
+                <div className="col-4 col-md-2">
+                    <div id="duedate">
+                        {moment(props.dueDate).format("MMM Do YY")}
+                    </div>
+                </div>
+                <div className="col-8 col-md-3">
+                    <span className="statusbtn">
+                        <div>{props.status === "completed" ? <Completed /> : <button class="btn btn-primary" onClick={completeHandleClick}>Pending</button>}
+                            <button type="button" className="btn btn-primary" onClick={deleteHandleClick}>Delete</button></div>
+                    </span>
+                </div>
+            </div>
         </div>
     );
-
 }
 export default Task;
