@@ -1,5 +1,5 @@
 import React from 'react';
-import "/Users/srini/Tech Returners/todo_list_frontend/src/Task/Task.css";
+import "./Task.css";
 
 function TaskCount(props) {
     return (

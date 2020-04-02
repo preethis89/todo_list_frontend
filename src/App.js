@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-import TaskCount from "./TaskCount/TaskCount";
+import TaskCount from "./Task/TaskCount";
 import Task from "./Task/Task";
 import Addtask from "./Addtask/Addtask";
-import background from '/Users/srini/Tech Returners/todo_list_frontend/src/bk4.jpg';
+import background from './bk4.jpg';
 
 
 function App() {
