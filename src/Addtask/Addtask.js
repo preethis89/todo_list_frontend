@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import "/Users/srini/Tech Returners/todo_list_frontend/src/Task/Task.css";
 import "./Addtask.css";
 function Addtask(props) {
 
@@ -33,10 +32,10 @@ function Addtask(props) {
                         <input type="date" class="form-control" value={date} onChange={handleDateChange} />
                     </div>
                 </div>
-                <div class="col-4 col-md-4">
-                    <input type="text" class="form-control" value={tasktext} onChange={handleTxtChange} />
+                <div class="col-12 col-md-4">
+                    <input type="text" class="form-control" value={tasktext} onChange={handleTxtChange} placeholder="Add task item here..."/>
                 </div>
-                <div class="col-6 col-md-2 ml-3">
+                <div class="col-6 col-md-2 ml-3" id="chkbox">
                     <input type="checkbox" class="form-check-input" id="urgentCheckbox" value={priority} onChange={handleUrgentChange} />
                     <label class="form-check-label" htmlFor="urgentCheckbox">Urgent</label>
                 </div>
