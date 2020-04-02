@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 import TaskCount from "./TaskCount/TaskCount";
 import Task from "./Task/Task"
 import Addtask from "./Addtask/Addtask"
@@ -52,14 +52,30 @@ function App() {
       return task;
     });
     setTasks(completedTodo);
-  };
+  }
+  const addNewTask = (tasktext, date, priority) => {
+
+    const addTask = {
+      todo: tasktext,
+      dueDate: date,
+      priority: priority,
+      status: "pending",
+      id: Math.random() * 100,
+    };
+
+
+    const newTasks = [...task, addTask];
+
+
+    setTasks(newTasks);
+  }
 
   return (
     <div className="App">
       <Header />
       <TaskCount count={task.length} />
       <main>
-        <Addtask />
+        <Addtask addNewTaskFunc={addNewTask} />
       </main>
       <div>
         {task.map(task => {
@@ -77,7 +93,12 @@ function App() {
         })}
 
       </div>
+      <div>
+      <Footer />
+      </div>
+      
     </div>
+    
   );
 }
 export default App;

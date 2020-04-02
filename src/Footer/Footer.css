@@ -1,0 +1,16 @@
+#footerpage {
+    position: relative;
+    min-height: 100px;
+  }
+footer{
+    background-color: #323333;
+    color: white;
+    width:100%;
+    position:absolute;
+    bottom: 0px;
+
+}
+.btn.btn-outline-white.btn-rounded{
+    color:white;
+    background-color: #27a1d1;
+}

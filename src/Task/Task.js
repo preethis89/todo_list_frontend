@@ -8,14 +8,23 @@ function Task(props) {
     const completeHandleClick = () => {
         props.completedTaskFn(props.id);
     };
+    const comstyle={
+        fontStyle : "italic",
+        textDecoration : "line-through",
+        color : "#27a1d1"
+        
+    }
     return (
         <div className="container">
-            <div className="row">
+            <div className="row" id="todoItems">
                 <div className="col-12 col-md-4">
-                    <div>{props.text}
+                    <div style={props.status === "completed" ? comstyle : null}> {props.text}
                     </div>
                 </div>
-                <div className="col-12 col-md-3">{props.priority === "urgent" ? <css style={{ color: 'red' }}>"Urgent"</css> : "Can wait"}
+                <div className="col-12 col-md-3">
+                    {props.priority === "urgent" ? 
+                    <css style={{ color: 'red' }}>"Urgent"</css> 
+                    : "Can wait"}
                 </div>
                 <div className="col-4 col-md-2">
                     <div id="duedate">

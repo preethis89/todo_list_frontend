@@ -71,3 +71,6 @@ button.btn.btn-secondary{
 input.form-control{
     margin: 0px;
 }
+div#todoItems{
+    background-color: #d8e8ee;
+}
