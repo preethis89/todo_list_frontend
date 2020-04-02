@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import "/Users/srini/Tech Returners/todo_list_frontend/src/Task/Task.css";
-import "./Addtask.css"
+//import "/Users/srini/Tech Returners/todo_list_frontend/src/Task/Task.css";
+import "./Addtask.css";
 function Addtask(props) {
 
     const [tasktext, setText] = useState("");
