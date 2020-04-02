@@ -33,7 +33,7 @@ function Addtask(props) {
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <input type="text" class="form-control" value={tasktext} onChange={handleTxtChange} placeholder="Add task item here..."/>
+                    <input type="text" class="form-control" value={tasktext} onChange={handleTxtChange} placeholder="Add task item here..." />
                 </div>
                 <div class="col-6 col-md-2 ml-3" id="chkbox">
                     <input type="checkbox" class="form-check-input" id="urgentCheckbox" value={priority} onChange={handleUrgentChange} />

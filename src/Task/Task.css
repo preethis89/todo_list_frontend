@@ -58,6 +58,8 @@ span button.btn.btn-primary{
     padding-right: 15px;
     display: inline;
     font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     
     
 }
@@ -67,11 +69,14 @@ button.btn.btn-secondary{
     padding-right: 5px;
     font-size: 16px;
     margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     
 }
 input.form-control{
     margin: 0px;
 }
 div#todoItems{
-    background-color: #d8e8ee;
+    background-color: #ffffff;
+    border-radius: 10px;
 }

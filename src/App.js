@@ -3,8 +3,10 @@ import './App.css';
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import TaskCount from "./TaskCount/TaskCount";
-import Task from "./Task/Task"
-import Addtask from "./Addtask/Addtask"
+import Task from "./Task/Task";
+import Addtask from "./Addtask/Addtask";
+import background from '/Users/srini/Tech Returners/todo_list_frontend/src/bk4.jpg';
+
 
 function App() {
   const [task, setTasks] = useState([
@@ -70,9 +72,12 @@ function App() {
     setTasks(newTasks);
   }
 
+
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: `url(${background})` }}>
+
       <Header />
+
       <TaskCount count={task.length} />
       <main>
         <Addtask addNewTaskFunc={addNewTask} />
@@ -94,11 +99,11 @@ function App() {
 
       </div>
       <div>
-      <Footer />
+        <Footer />
       </div>
-      
     </div>
-    
+
+
   );
 }
 export default App;
