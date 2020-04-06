@@ -22,7 +22,7 @@ function Task(props) {
                     </div>
                 </div>
                 <div className="col-12 col-md-3">
-                    {props.priority === "urgent" ? 
+                    {props.priority === true ? 
                     <css style={{ color: 'red' }}>"Urgent"</css> 
                     : "Can wait"}
                 </div>

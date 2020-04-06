@@ -13,28 +13,28 @@ function App() {
     {
       todo: "Take vitamins",
       status: "completed",
-      priority: "urgent",
+      priority: true,
       dueDate: "2020-05-02",
       id: 1,
     },
     {
       todo: "Do the dishes",
       status: "pending",
-      priority: "urgent",
+      priority: false,
       dueDate: "2020-05-12",
       id: 2
     },
     {
       todo: "Go for a walk",
       status: "completed",
-      priority: "urgent",
+      priority: true,
       dueDate: "2020-03-30",
       id: 3
     },
     {
       todo: "Complete the exercise",
       status: "pending",
-      priority: "can wait",
+      priority: true,
       dueDate: "2020-04-02",
       id: 4
     }
