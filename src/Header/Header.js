@@ -9,9 +9,9 @@ function Header() {
                     <img src={require("./mylist1.png")} width="70" height="70" alt="DOIT" />
                 </a>
             </nav>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+            <div className="container">
+                <div className="row">
+                    <div className="col">
                         <h1 id="mainTitle">
                             My List
             </h1>

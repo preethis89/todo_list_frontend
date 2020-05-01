@@ -3,14 +3,14 @@
     border: steelblue;
 }
 
-  .w3-panel{
+  /* .w3-panel{
       margin: 10px 0px 0px 0px;
       border-radius: 5px;
       padding: 12px 8px 12px 10px;
       background-color: #27a1d1;
       text-align: justify;
 
-  }
+  } */
   
   .col-6{
       margin-left: 120px;
@@ -18,11 +18,11 @@
   .form-control{
       margin-bottom: 30px;
   }
-  .container{
-      margin-top: 10px;
-      padding: 0px 40px 0px 40px;
+  .row{
+      margin-top: 20px;
+      
   }
-  .container p{
+  .row p{
       text-align: left;
       position: relative;
       background-color: #f1f5f7;
@@ -34,14 +34,15 @@
 p{
     margin-bottom: 0px;
 }
-.w3-large{
+/* .w3-large{
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-}
+} */
 .btn-primary{
     background-color: #33a6d3;
     margin-right: 5px;
+    margin-bottom: 5px;
     
 
 }
@@ -53,30 +54,44 @@ p{
 span button.btn.btn-primary{
     
     
-    padding-top: 0px;
+    padding-top: 7px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 8px;
     display: inline;
     font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    border-radius: 100%;
     
     
 }
 button.btn.btn-secondary{
-    padding-top: 0px;
+    padding-top: 6px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 11px;
     font-size: 16px;
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    border-radius: 100%;
 }
 input.form-control{
     margin: 0px;
 }
 div#todoItems{
-    background-color: #ffffff;
-    border-radius: 10px;
+    background-color: #def6ff;
+    border-radius: 20px;
+}
+#taskcount{
+    max-width: 60%;
+}
+#todoItems{
+    padding-top: 2px;
+}
+.tasktext{
+    padding-top: 7px;
+    text-align: left;
+}
+.col-6{
+    margin-left: 0px;
 }

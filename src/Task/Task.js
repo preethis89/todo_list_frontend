@@ -1,6 +1,10 @@
 import React from 'react';
 import Completed from "./Completed";
 import moment from "moment";
+import { AiFillDelete } from 'react-icons/ai';
+import { FaHourglassStart } from 'react-icons/fa';
+import { FaAngleRight } from 'react-icons/fa';
+
 function Task(props) {
     const deleteHandleClick = () => {
         props.deleteTaskFn(props.id);
@@ -14,31 +18,32 @@ function Task(props) {
         color : "#27a1d1"
         
     }
+    
     return (
-        <div className="container">
-            <div className="row" id="todoItems">
-                <div className="col-12 col-md-4">
-                    <div style={props.status === "completed" ? comstyle : null}> {props.text}
+        
+            <div className="row shadow" id="todoItems">
+                <div className="col-6 col-md-4 tasktext" >
+                    <div style={props.status === 1 ? comstyle : null}><FaAngleRight/>  {props.text}
                     </div>
                 </div>
-                <div className="col-12 col-md-3">
-                    {props.priority === true ? 
-                    <css style={{ color: 'red' }}>"Urgent"</css> 
+                <div className="col-6 col-md-2 tasktext">
+                    {props.priority === 1 ? 
+                    <div style={{ color: 'red' }}>"Urgent"</div> 
                     : "Can wait"}
                 </div>
-                <div className="col-4 col-md-2">
+                <div className="col col-md-3 tasktext">
                     <div id="duedate">
                         {moment(props.dueDate).format("MMM Do YY")}
                     </div>
                 </div>
-                <div className="col-8 col-md-3">
+                <div className="col col-md-3 tasktext">
                     <span className="statusbtn">
-                        <div>{props.status === "completed" ? <Completed /> : <button class="btn btn-primary" onClick={completeHandleClick}>Pending</button>}
-                            <button type="button" className="btn btn-primary" onClick={deleteHandleClick}>Delete</button></div>
+                        <div>{props.status === 1 ? <Completed /> : <button className="btn btn-primary" onClick={completeHandleClick}><FaHourglassStart /></button>}
+                            <button type="button" className="btn btn-primary" onClick={deleteHandleClick}><AiFillDelete /></button></div>
                     </span>
                 </div>
             </div>
-        </div>
+        
     );
 }
 export default Task;

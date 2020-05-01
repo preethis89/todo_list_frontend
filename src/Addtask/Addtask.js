@@ -27,15 +27,15 @@ function Addtask(props) {
     return (
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4" id="add-date">
                     <div class="input-group-prepend">
                         <input type="date" class="form-control" value={date} onChange={handleDateChange} />
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" id="add-text">
                     <input type="text" class="form-control" value={tasktext} onChange={handleTxtChange} placeholder="Add task item here..." />
                 </div>
-                <div class="col-6 col-md-2 ml-3" id="chkbox">
+                <div class="col-6 col-md-1 ml-1" id="chkbox">
                     <input type="checkbox" class="form-check-input" id="urgentCheckbox" value={priority} onChange={handleUrgentChange} />
                     <label class="form-check-label" htmlFor="urgentCheckbox">Urgent</label>
                 </div>
