@@ -1,12 +1,17 @@
 
 .addtask{
     padding: 0px;
-    margin-left: 0px;
+    margin: 0px 30px;
 }
-#chkbox{
-    padding: 0px;
+#addbutton{
+    border-radius: 70%;
+    
 }
-
+#addcollapse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   @media (max-width: 770px) {
     #add-text {
       margin-bottom: 15px;

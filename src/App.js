@@ -80,7 +80,7 @@ function App() {
         <Addtask addNewTaskFunc={addNewTask} />
       </div>
       <div className="my-4">
-      <div className="card card-body shadow">
+      <div className="card card-body ">
         {task.map(task => {
           return (
             <Task

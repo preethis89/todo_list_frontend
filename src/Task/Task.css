@@ -51,7 +51,7 @@ p{
     right: 10px;
     
 }*/
-span button.btn.btn-primary{
+span button.btn.btn-secondary{
     
     
     padding-top: 7px;
@@ -79,7 +79,7 @@ input.form-control{
     margin: 0px;
 }
 div#todoItems{
-    background-color: #def6ff;
+    background-color: white;
     border-radius: 20px;
 }
 #taskcount{
@@ -89,7 +89,7 @@ div#todoItems{
     padding-top: 2px;
 }
 .tasktext{
-    padding-top: 7px;
+    padding-top: 15px;
     text-align: left;
 }
 .col-6{

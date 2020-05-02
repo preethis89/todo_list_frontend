@@ -3,9 +3,10 @@
     min-height: 200px;
   }
 footer{
-    background-color: #def6ff;
+    background-color: #25ced1;
     color: #3a3a3a;
     width:100%;
+    height: 50px;
     position:absolute;
     bottom: 0px;
 

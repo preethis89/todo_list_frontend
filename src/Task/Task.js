@@ -28,18 +28,18 @@ function Task(props) {
                 </div>
                 <div className="col-6 col-md-2 tasktext">
                     {props.priority === 1 ? 
-                    <div style={{ color: 'red' }}>"Urgent"</div> 
-                    : "Can wait"}
+                    <div class="badge badge-pill badge-danger" style={{ color: 'white' }}>Urgent</div> 
+                    : <div class="badge badge-pill badge-info" style={{ color: 'white' }}>Can Wait</div>}
                 </div>
                 <div className="col col-md-3 tasktext">
                     <div id="duedate">
                         {moment(props.dueDate).format("MMM Do YY")}
                     </div>
                 </div>
-                <div className="col col-md-3 tasktext">
+                <div className="col col-md-3">
                     <span className="statusbtn">
-                        <div>{props.status === 1 ? <Completed /> : <button className="btn btn-primary" onClick={completeHandleClick}><FaHourglassStart /></button>}
-                            <button type="button" className="btn btn-primary" onClick={deleteHandleClick}><AiFillDelete /></button></div>
+                        <div>{props.status === 1 ? <Completed /> : <button className="btn btn-secondary" onClick={completeHandleClick}><FaHourglassStart /></button>}
+                            <button type="button" className="btn btn-secondary" onClick={deleteHandleClick}><AiFillDelete /></button></div>
                     </span>
                 </div>
             </div>

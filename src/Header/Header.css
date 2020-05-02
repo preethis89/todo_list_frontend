@@ -1,8 +1,12 @@
 #mainTitle {
     text-decoration: none;
-    color: #3a3a3a;
+    color: white;
+    
     
 }
  #nav1{
-background-color: #def6ff;;
+background-color: #25ced1;
+display: flex;
+align-items: center;
+justify-content: center;
 }
