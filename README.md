@@ -1,3 +1,11 @@
+# Todo_List_Frontend
+This app is a simple todo application to keep track of the day to day routines and task.
+
+# Technologies Used:
+ React,Bootstrap 4,Node,Express Framework, Amazon Rds(MySql)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

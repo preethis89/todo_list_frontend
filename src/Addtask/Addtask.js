@@ -39,7 +39,7 @@ function Addtask(props) {
                         <div class="p-2" id="add-text">
                             <input type="text" class="form-control" value={tasktext} onChange={handleTxtChange} placeholder="Add task item here..." />
                         </div>
-                        <div class="p-2" id="chkbox">
+                        <div class="p-2 ml-4" id="chkbox">
                             <input type="checkbox" class="form-check-input" id="urgentCheckbox" value={priority} onChange={handleUrgentChange} />
                             <label class="form-check-label" htmlFor="urgentCheckbox">Urgent</label>
                         </div>

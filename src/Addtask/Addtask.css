@@ -7,6 +7,9 @@
     border-radius: 70%;
     
 }
+#chkbox{
+  color:#3a3a3a;
+}
 #addcollapse{
     display: flex;
     align-items: center;
