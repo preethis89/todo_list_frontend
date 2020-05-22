@@ -4,7 +4,7 @@ import "./Addtask.css";
 function Addtask(props) {
 
     const [tasktext, setText] = useState("");
-    const [date, setDate] = useState("2020-04-20");
+    const [date, setDate] = useState(new Date());
     const [priority, setUrgent] = useState(false);
 
     const handleTxtChange = (event) => {
@@ -20,7 +20,11 @@ function Addtask(props) {
     }
 
     const handleAddTask = () => {
+       
         props.addNewTaskFunc(tasktext, date, priority);
+         setText("");
+         document.getElementById("urgentCheckbox").checked = false;
+
 
     }
 
@@ -33,11 +37,11 @@ function Addtask(props) {
                 <div class="d-flex justify-content-around text-white">
                         <div class="p-2" id="add-date">
                             <div class="input-group-prepend">
-                                <input type="date" class="form-control" value={date} onChange={handleDateChange} />
+                                <input type="date" class="form-control" id="tododate" value={date} onChange={handleDateChange} />
                             </div>
                         </div>
                         <div class="p-2" id="add-text">
-                            <input type="text" class="form-control" value={tasktext} onChange={handleTxtChange} placeholder="Add task item here..." />
+                            <input type="text" class="form-control" id ="todotext" value={tasktext} onChange={handleTxtChange} placeholder="Add task item here..." />
                         </div>
                         <div class="p-2 ml-4" id="chkbox">
                             <input type="checkbox" class="form-check-input" id="urgentCheckbox" value={priority} onChange={handleUrgentChange} />
